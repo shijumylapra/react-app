@@ -1,0 +1,5 @@
+
+docker build -t react-app .
+build acutal container from the image create instance with system port and expose port number
+
+docker run -p 3000:3000 react-app
