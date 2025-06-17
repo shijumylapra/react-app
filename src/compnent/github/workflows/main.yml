@@ -29,7 +29,6 @@ jobs:
         run: npm run test
 
 
-  
   docker-build-and-push:
     needs: build-and-test
     runs-on: ubuntu-latest
