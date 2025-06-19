@@ -42,7 +42,8 @@ jobs:
           docker login -u "${{ secrets.DOCKERHUB_USERNAME }}" -p "${{ secrets.DOCKERHUB_TOKEN }}"
 
       - name: Build Docker image
-        run: docker build -t "${{ secrets.DOCKERHUB_USERNAME }}my-react-app:latest" .
+        run: docker build -t "${{ secrets.DOCKERHUB_USERNAME }}/greeting-react-app:latest" .
 
       - name: Push Docker image to Docker Hub
-        run: docker push "${{ secrets.DOCKERHUB_USERNAME }}/my-react-app:latest"      
+        run: docker push "${{ secrets.DOCKERHUB_USERNAME }}/greeting-react-app:latest"      
+
